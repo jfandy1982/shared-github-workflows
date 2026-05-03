@@ -4,23 +4,16 @@ Reusable GitHub Actions workflows for all repositories owned by [@jfandy1982](ht
 
 ## Available Workflows
 
-### Garbage Collection (`retention_period.yml`)
+### Garbage Collection (`reusable-retention-workflow-runs.yml`)
 
-Deletes outdated workflow runs based on a configurable retention period.
+Deletes all workflow runs (and their associated artifacts) in the calling repository. No age filter, no minimum — complete cleanup on every run.
 
 **Usage in other repos:**
 
 ```yaml
 jobs:
   retention:
-    uses: jfandy1982/shared-github-workflows/.github/workflows/retention_period.yml@main
-    with:
-      days: '30'
+    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-retention-workflow-runs.yml@main
 ```
 
-**Inputs:**
-
-| Input | Required | Default | Description |
-| --- | --- | --- | --- |
-| `days` | no | `30` | Retention period in days |
-| `keep_minimum_runs` | no | `5` | Minimum runs to keep regardless of age |
+The calling workflow is responsible for defining its own trigger (schedule, dispatch, etc.). No inputs required.
