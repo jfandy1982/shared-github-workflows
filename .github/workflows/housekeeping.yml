@@ -1,0 +1,10 @@
+name: Local Housekeeping
+
+on:
+  schedule:
+    - cron: '08 04 * * 5'
+  workflow_dispatch:
+
+jobs:
+  retention:
+    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-retention-workflow-runs.yml@main
