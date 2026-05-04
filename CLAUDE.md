@@ -11,6 +11,7 @@ This is the GitHub repository containing reusable GitHub Workflows.
   - Local orchestrators: `<purpose>.yml` — triggers scoped to this repo only
 - `.github/actions/` — composite actions (not yet created, reserved for future use)
 - `experiments/` — deliberate playground and backup directory, not production code; ignore when reviewing
+  - `experiments/superpowers/` — brainstorming specs and implementation plans from Claude sessions (gitignored, local only); check here for prior design decisions before starting new work
 - `node_modules/` — exists locally but is gitignored; not committed to the repo
 
 ## Tooling
