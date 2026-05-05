@@ -8,3 +8,6 @@ on:
 jobs:
   retention:
     uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-retention-workflow-runs.yml@main
+    permissions:
+      actions: write
+      contents: read
