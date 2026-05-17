@@ -1,0 +1,13 @@
+name: Local ActionLint
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+jobs:
+  actionlint:
+    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable/reusable-actionlint.yml@main
+    permissions:
+      contents: read
