@@ -1,0 +1,13 @@
+name: Reusable - actionlint
+
+on:
+  workflow_call:
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: rhysd/actionlint-action@914e7df21a07ef503a81201c76d2b11c789d3fca # v1.7.12

@@ -17,3 +17,19 @@ jobs:
 ```
 
 The calling workflow is responsible for defining its own trigger (schedule, dispatch, etc.). No inputs required.
+
+### Actionlint (`reusable/reusable-actionlint.yml`)
+
+Lints all GitHub Actions workflow files in the calling repository using [actionlint](https://github.com/rhysd/actionlint).
+
+**Usage in other repos:**
+
+```yaml
+jobs:
+  actionlint:
+    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable/reusable-actionlint.yml@main
+    permissions:
+      contents: read
+```
+
+The calling workflow is responsible for defining its own trigger (schedule, dispatch, etc.). No inputs required.
