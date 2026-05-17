@@ -8,6 +8,6 @@ on:
 
 jobs:
   actionlint:
-    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable/reusable-actionlint.yml@main
+    uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-actionlint.yml@main
     permissions:
       contents: read
