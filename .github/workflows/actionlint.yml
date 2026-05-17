@@ -8,6 +8,7 @@ on:
 
 jobs:
   actionlint:
+    name: Lint Workflow Files
     uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-actionlint.yml@main
     permissions:
       contents: read

@@ -5,6 +5,7 @@ on:
 
 jobs:
   delete-runs:
+    name: Delete Workflow Runs
     runs-on: ubuntu-latest
     permissions:
       actions: write

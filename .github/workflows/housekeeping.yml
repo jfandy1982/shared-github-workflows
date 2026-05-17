@@ -7,6 +7,7 @@ on:
 
 jobs:
   retention:
+    name: Apply Retention Policy
     uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-retention-workflow-runs.yml@main
     permissions:
       actions: write
