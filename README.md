@@ -30,6 +30,7 @@ jobs:
     uses: jfandy1982/shared-github-workflows/.github/workflows/reusable-actionlint.yml@main
     permissions:
       contents: read
+      pull-requests: write
 ```
 
 The calling workflow is responsible for defining its own trigger. No inputs required.
