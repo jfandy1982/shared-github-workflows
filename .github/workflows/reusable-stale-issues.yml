@@ -1,0 +1,25 @@
+name: Reusable - Stale Issues
+
+on:
+  workflow_call:
+
+jobs:
+  stale:
+    name: Mark and Close Stale Issues
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Mark and close stale issues
+        uses: actions/stale@eb5cf3af3ac0a1aa4c9c45633dd1ae542a27a899 #v10.3.0
+        with:
+          days-before-issue-stale: 60
+          days-before-issue-close: 14
+          days-before-pr-stale: -1
+          stale-issue-label: 'status: stale'
+          exempt-issue-labels: 'status: pinned'
+          stale-issue-message: >
+            This issue has been automatically marked **stale** because it has had no activity for 60 days. It will be closed in 14 days if no further activity occurs. Add the `status: pinned` label to exempt it from this automation.
+
+          close-issue-message: >
+            This issue was closed because it has been stale for 14 days with no further activity.
