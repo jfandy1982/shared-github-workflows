@@ -11,6 +11,8 @@ jobs:
       actions: write
       contents: read
     steps:
+      - name: Print deprecation warning
+        run: echo "::warning title=Deprecated::This reusable workflow will be removed after 2027-01-08. GitHub now offers artifact and workflow run retention in the repository settings. Configure it there and remove this workflow call."
       - name: Delete outdated workflow runs
         uses: Mattraks/delete-workflow-runs@b3018382ca039b53d238908238bd35d1fb14f8ee # v2.1.0
         with:
