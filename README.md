@@ -6,6 +6,8 @@ Reusable GitHub Actions workflows for all repositories owned by [@jfandy1982](ht
 
 ### Garbage Collection (`reusable-retention-workflow-runs.yml`)
 
+> **Deprecated — will be removed after 2027-01-08.** GitHub now offers artifact and workflow run retention in the repository settings. Configure it there and remove calls to this workflow.
+
 Deletes all workflow runs (and their associated artifacts) in the calling repository. No age filter, no minimum — complete cleanup on every run.
 
 **Usage in other repos:**
