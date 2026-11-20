@@ -14,4 +14,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 #v7.0.0
       - name: Scan workflow files
-        uses: devops-actions/actionlint@ec02b36684b2f574f1d219ad0a43b082e46bf3e4 # v0.1.13
+        uses: devops-actions/actionlint@216abcda9203ffeaeb953db1b151c94e1927c5bf # v1.0.0
